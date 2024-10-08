@@ -36,15 +36,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng UDEC = new LatLng(-36.598619, -72.087786);
+        LatLng FdBL1 = new LatLng(-36.61514470088882, -72.10211354391741);
         LatLng IPVG = new LatLng(-36.589809, -72.082673);
-        LatLng VIVO = new LatLng(-36.588756, -72.077756);
-        mMap.addMarker(new MarkerOptions().position(UDEC).title("UDEC"));
-        mMap.addMarker(new MarkerOptions().position(VIVO).title("VIVO"));
-        mMap.addMarker(new MarkerOptions().position(IPVG).title("IPVG"));
+        LatLng FdBL2 = new LatLng(-36.61077505798128, -72.10441668972292);
+        LatLng FdBL3 = new LatLng(-36.611694483042065, -72.10117750625646);
+        LatLng FdBL4 = new LatLng(-36.61056744435371, -72.10228597208149);
+
+        mMap.addMarker(new MarkerOptions().position(FdBL1).title("FdBL1"));
+        mMap.addMarker(new MarkerOptions().position(FdBL2).title("FdBL2"));
+        mMap.addMarker(new MarkerOptions().position(FdBL3).title("FdBL3"));
+        mMap.addMarker(new MarkerOptions().position(FdBL4).title("FdBL4"));
+        mMap.addMarker(new MarkerOptions().position(IPVG).title("UBICACION ACTUAL"));
 
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(IPVG,100));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(IPVG,15));
 
 
         //mMap.setMinZoomPreference(10.0f);
